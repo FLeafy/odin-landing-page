@@ -9,28 +9,35 @@
 body {
   font-family: Roboto;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* * { border: 1px solid red;} */
+
+/* Header section */
 .header {
   display: flex;
   width: 100%;
   flex-direction: column;
   background-color: #1F2937;
-  padding: 10px 50px;
+  padding: 10px 200px;
 }
 
+/* Header Top Section */
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.header-top > a {
+  font-size: 24px;
+}
+
 .header-top a {
   text-decoration: none;
-  font-size: 24px;
   color: #F9FAF8;
 }
 
@@ -39,4 +46,169 @@ body {
   list-style: none;
   font: 18px;
   color: #E5E7EB;
+  gap: 20px;
+}
+
+/* Header Bottom Section */
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 700px;
+}
+
+.header-bottom-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 18px;
+  color: #e5e7eb;
+  width: 30%;
+  gap: 20px;
+}
+
+.header-bottom-left h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.header-bottom-left .signup-btn {
+  background-color: #3882f6;
+  color: #E5E7EB;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  border-radius: 10px;
+  height: 40px;
+  padding: 0px 50px;
+  align-content: center;
+}
+
+.image-placeholder {
+  display: flex;
+  background-color: gray;
+  font-size: 24px;
+  color: #e5e7eb;
+  height: 50%;
+  flex-grow: 0.6;
+  justify-content: center;
+  align-items: center;
+}
+
+/* This is the information section */
+.information {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 100px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.information h2 {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.card .card-image {
+  height: 250px;
+  border: 4px solid #3882f6;
+  border-radius: 10px;
+}
+
+/* This is the Quote Section */
+.quote-section {
+  background-color: #E5E7EB;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container {
+  width: 51%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  color: #1F2937;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.cite {
+  padding-right: 30px;
+  font-size: 18px;
+  font-weight: 900;
+  align-self: flex-end;
+}
+
+/* This is the Sign Up Section */
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  color: #E5E7EB;
+  display: flex;
+  background-color: #3882f6;
+  border-radius: 10px;
+  width: 70%;
+  padding: 50px 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner .bold {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.banner a {
+  background-color: #3882f6;
+  color: #E5E7EB;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  border: 2px solid #E5E7EB;
+  border-radius: 10px;
+  height: 40px;
+  padding: 0px 50px;
+  align-content: center;
+}
+
+.banner a:hover {
+  background-color: #3477e4;
+}
+
+/* This is Footer Section */
+footer {
+  display: flex;
+  background-color: #1F2937;
+  color: #E5E7EB;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
 }
